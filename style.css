@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(165, 161, 161);
+}
+.container{
+    width: 250px;
+    height: 400px;
+    margin: 80px auto;
+    border-radius: 20px;
+    background: rgb(229, 226, 226);
+    box-shadow: 5px 5px 10px #b6a9a9, -5px -5px -10px #ffffff;
+}
+.cal-box{
+    width: 200px;
+    margin: 20px auto;
+}
+#display{
+    border: none;
+    outline: none;
+    color: black;
+    text-align: right;
+    font-weight: 600;
+    padding: 15px;
+    margin: 30px 0 20px 0;
+    background: transparent;
+    box-shadow: inset 2px 2px 5px #babeec, inset -5px -5px 10px #ffffff;
+}
+.button{
+    margin: 15px 0 0 5px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgb(226, 223, 223);
+    box-shadow: 5px 5px 10px #aca6a6, -5px -5px 10px #d3caca;
+    display: inline-block;
+}
+.button:active{
+    box-shadow: inset 1px 1px 2px #b6bbf1, inset -1px -1px 2px #fff;
+}
+.clearButton{
+    background: red;
+    color: white;
+}
+.mathbutton{
+    background: black;
+    color: white;
+}
+
+html,body{
+    margin-top: 15px;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background:  rgb(112, 109, 109);
+}
+.btn a{
+    position: relative;
+    color: #f5f5f5;
+    height: 70px;
+    width: 220px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    background-image: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+}
+.btn a:hover{
+    animation: rotate 0.3s linear infinite;
+}
+@keyframes rotate {
+    100%{
+      filter: hue-rotate(-360deg)
+}
+}
+.btn a span{
+    height: 88%;
+    width: 96%;
+    background: #111;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 6px;
+    line-height: 62px;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+}
